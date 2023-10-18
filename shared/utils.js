@@ -27,9 +27,9 @@ class Reticle extends THREE.Object3D {
 
     //this.loader = new THREE.GLTFLoader();
     this.loader = new THREE.OBJLoader();
-    this.loader.load("https://immersive-web.github.io/webxr-samples/media/gltf/reticle/reticle.gltf", (obs) => {
+/*     this.loader.load("https://immersive-web.github.io/webxr-samples/media/gltf/reticle/reticle.gltf", (obs) => {
       this.add(obs.scene);
-    })
+    }) */
 
     this.visible = false;
   }
