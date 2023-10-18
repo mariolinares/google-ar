@@ -171,6 +171,7 @@ class App {
     this.renderer.shadowMap.enabled = true;
     this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
+    debugger;
     // Initialize our demo scene.
     this.scene = DemoUtils.createLitScene();
     this.reticle = new Reticle();

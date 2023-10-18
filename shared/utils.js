@@ -14,8 +14,8 @@
  */
 
 window.gltfLoader = new THREE.GLTFLoader();
-window.obsLoader = new THREE.OBJLoader();
-
+window.objLoader = new THREE.OBJLoader();
+console.log(window.objLoader)
 /**
  * The Reticle class creates an object that repeatedly calls
  * `xrSession.requestHitTest()` to render a ring along a found
@@ -25,11 +25,12 @@ class Reticle extends THREE.Object3D {
   constructor() {
     super();
 
-    //this.loader = new THREE.GLTFLoader();
-    this.loader = new THREE.OBJLoader();
-/*     this.loader.load("https://immersive-web.github.io/webxr-samples/media/gltf/reticle/reticle.gltf", (obs) => {
-      this.add(obs.scene);
-    }) */
+    this.loader = new THREE.GLTFLoader();
+    //this.loader = new THREE.OBJLoader();
+    console.log('loader: ', loader)
+    this.loader.load("https://immersive-web.github.io/webxr-samples/media/gltf/reticle/reticle.gltf", (obs) => {
+      this.add(obs);
+    })
 
     this.visible = false;
   }
@@ -43,7 +44,7 @@ class Reticle extends THREE.Object3D {
   window.sunflower = gltf.scene;
 }); */
 
-window.obsLoader.load("../models/ElectricScooterDetached.obj", function(obs) {
+window.objLoader.load("../models/ElectricScooterDetached.obj", function(obs) {
  console.log(obs)
  const flower = obs.children.find(c => c.name === 'ElectricScooter')
  flower.castShadow = true;
