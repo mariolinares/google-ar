@@ -49,7 +49,7 @@ window.objLoader.load("../models/ElectricScooterDetached.obj", function(obs) {
  const flower = obs.children.find(c => c.name === 'ElectricScooter')
  flower.castShadow = true;
  console.log(flower)
-  window.sunflower = obs;
+  window.objLoader = obs;
 });
 
 
