@@ -62,7 +62,7 @@ window.DemoUtils = {
     directionalLight.castShadow = true;
 
     // Make a large plane to receive our shadows
-    const planeGeometry = new THREE.PlaneGeometry(2000, 2000);
+    const planeGeometry = new THREE.PlaneGeometry(1000, 1000);
     // Rotate our plane to be parallel to the floor
     planeGeometry.rotateX(-Math.PI / 2);
 
