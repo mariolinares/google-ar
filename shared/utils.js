@@ -44,7 +44,7 @@ class Reticle extends THREE.Object3D {
 }); */
 
 window.obsLoader.load("../models/ElectricScooterDetached.obj", function(obs) {
- console.log(obs.scene.children)
+ console.log(obs)
  const flower = obs.scene.children.find(c => c.name === 'ElectricScooterDetached')
  flower.castShadow = true;
  console.log(flower)
