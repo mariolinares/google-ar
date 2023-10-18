@@ -1,0 +1,11 @@
+Model Information:
+* title:	Kidpool
+* source:	https://sketchfab.com/3d-models/kidpool-7027bee9dc5f46409a00b96ed1b5810c
+* author:	CAPTAAINR (https://sketchfab.com/CAPTAAINR)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Kidpool" (https://sketchfab.com/3d-models/kidpool-7027bee9dc5f46409a00b96ed1b5810c) by CAPTAAINR (https://sketchfab.com/CAPTAAINR) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
