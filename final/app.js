@@ -97,11 +97,11 @@ class App {
   onSelect = () => {
     debugger;
     if (window.objLoader) {
-      const clone = window.sunflower.clone();
+      const clone = window.objLoader.clone();
       clone.position.copy(this.reticle.position);
       this.scene.add(clone)
 
-      const shadowMesh = this.scene.children.find(c => c.name === 'shadowMesh');
+      const shadowMesh = this.scene.find(c => c.name === 'shadowMesh');
       shadowMesh.position.y = clone.position.y;
     }
   }
