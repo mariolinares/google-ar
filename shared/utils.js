@@ -37,6 +37,7 @@ window.gltfLoader.load("../models/scene.gltf", function(gltf) {
   const flower = gltf.scene.children.find(c => c.name === 'Sketchfab_model')
   flower.castShadow = true;
   window.sunflower = gltf.scene;
+  console.log(window)
 });
 
 
