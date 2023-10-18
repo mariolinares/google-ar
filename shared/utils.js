@@ -32,12 +32,10 @@ class Reticle extends THREE.Object3D {
   }
 }
 
-window.gltfLoader.load("../models/scene.gltf", function(gltf) {
-  console.log(gltf.scene.children)
-  const flower = gltf.scene.children.find(c => c.name === 'Sketchfab_model')
+window.gltfLoader.load("https://immersive-web.github.io/webxr-samples/media/gltf/sunflower/sunflower.gltf", function(gltf) {
+  const flower = gltf.scene.children.find(c => c.name === 'sunflower')
   flower.castShadow = true;
   window.sunflower = gltf.scene;
-  console.log(window)
 });
 
 
@@ -63,7 +61,7 @@ window.DemoUtils = {
     directionalLight.castShadow = true;
 
     // Make a large plane to receive our shadows
-    const planeGeometry = new THREE.PlaneGeometry(2000, 2000);
+    const planeGeometry = new THREE.PlaneGeometry(1000, 1000);
     // Rotate our plane to be parallel to the floor
     planeGeometry.rotateX(-Math.PI / 2);
 
